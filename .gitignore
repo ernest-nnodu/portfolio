@@ -1,0 +1,62 @@
+# ------------------------------
+# Node / npm / JavaScript tooling
+# ------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build / production output
+dist/
+build/
+out/
+coverage/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+*.log.*
+debug.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# WebStorm / JetBrains IDE files
+.idea/
+*.iml
+
+# Cache
+.cache/
+.vscode/
+*.cache
+
+# Sass / Less (if added later)
+.sass-cache/
+*.sass-cache
+*.map
+
+# Optional: Generated assets
+*.min.js
+*.min.css
+
+# Optional: If using Bootstrap via npm
+bootstrap/
+
+# Optional: If using TypeScript later
+*.tsbuildinfo
