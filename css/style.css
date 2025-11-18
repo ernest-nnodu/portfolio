@@ -21,44 +21,44 @@ body{
     min-height: 100vh;
 }
 
-header, section{
+main, section{
     min-height: 100vh;
 }
 
-header{
+main{
     display: flex;
     justify-content: center;
     padding: 10px 20px;
 }
 
-header img {
+main img {
     height: 85vh;
     border-radius: 30px;
 }
 
-header .container {
+main .container {
     width: 850px;
     margin-left: 20px;
 }
 
-header h1 {
+main h1 {
     margin-top: 150px;
     font-size: 4rem;
 }
 
-header h2 {
+main h2 {
     margin-top: 20px;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 300;
 }
 
-header p {
+main p {
     color: var(--secondary-text-color);
     margin-bottom: 1rem;
 }
 
-header .read-more {
+main .read-more {
     padding: .5em 1.25em;
     background-color: var(--accent-color);
     color: var(--text-color);
@@ -70,22 +70,22 @@ header .read-more {
     transition: 0.3s;
 }
 
-header .read-more:hover {
+main .read-more:hover {
     background-color: var(--secondary-color);
 }
 
 @media(max-width:1000px){
 
-    header {
+    main {
         flex-wrap: wrap-reverse;
     }
 
-    header .container {
+    main .container {
         text-align: center;
         margin-top: 0;
     }
 
-    header img {
+    main img {
         margin-top: 10px;
     }
     header h1 {
@@ -95,7 +95,7 @@ header .read-more:hover {
 }
 
 @media(max-width:600px){
-    header img {
+    main img {
         height: 60vh;
     }
 }
