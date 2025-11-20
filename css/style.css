@@ -37,8 +37,17 @@ header nav {
     width: 700px;
     max-width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+}
+
+header img {
+    width: 30px;
+    background-color: var(--accent-color);
+    display: none;
 }
 
 nav a {
@@ -50,6 +59,18 @@ nav a {
 
 nav a:hover {
     color: var(--secondary-text-color);
+}
+
+@media(max-width:600px)  {
+    header nav {
+        display: none;
+    }
+
+    header #menu {
+        display: inline-block;
+        margin-right: 20px;
+        cursor: pointer;
+    }
 }
 
 main, section{
@@ -125,7 +146,16 @@ main .read-more:hover {
     }
 }
 
+@media(max-width:1000px){
+    main {
+        padding-top: 50px;
+    }
+}
+
 @media(max-width:600px){
+    main{
+        padding-top: 70px;
+    }
     main img {
         height: 60vh;
     }
