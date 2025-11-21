@@ -73,6 +73,46 @@ nav a:hover {
     }
 }
 
+.sidebar-overlay {
+    position: fixed;
+    width: 600px;
+    max-width: 95%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--primary-color);
+    border-left: 1px solid var(--secondary-color);
+    opacity: 0.97;
+    display: none;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 60px auto;
+}
+
+.sidebar-content a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 1.25rem;
+    margin: 20px auto;
+    transition: 0.3s;
+}
+
+.sidebar-content a:hover {
+    color: var(--secondary-text-color);
+}
+
+a.close-btn {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    font-size: 1.75rem;
+}
+
 main, section{
     min-height: 100vh;
 }
